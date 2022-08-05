@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-primary: #0064B7;
+    --color-buttons: #2978D7;
+    --color-fontnav: #333333;
+    
+}
+
+/* body */
+
+body {
+    
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.btn {
+    background-color: var(--color-buttons);
+}
+
+/* navbar */
+
+.nav-link {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--color-fontnav);
+}
+
+.nav-link.active {
+    color: var(--color-buttons) !important;
+    font-weight: 700;
+}
+
+.navbar-toggler {
+    border: 0;
+}
+
+/* carousel */
+.carrusel {
+    margin-top: 5rem;
+}
+
+.carousel-indicators button{
+    width: 0.5rem !important; 
+    height: 0.5rem !important;
+    border-radius: 50%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 18%;
+    right:45.8%;
+    text-align: left;
+}
+
+.carousel-item img {
+    filter: blur(0.188rem) brightness(68%);
+}
+
+.carousel-caption h2 {
+    font-weight: 600;
+    font-size: 1.875rem;
+    margin-bottom: 16px;
+}
+
+.carousel-caption p {
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.carousel-caption button {
+    margin-top: 1rem;
+    background-color: var(--color-buttons);
+    padding: 1rem 2.5rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 450px) {
+    
+    
+    
+    /* carousel */    
+    .carousel-item img {
+        filter: blur(0.188rem) brightness(68%);
+        height: 25rem;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        top: 10%;
+        right:10%;
+        text-align: center;
+        margin: -3rem 0 0 0;
+    }
+
+    .carousel-caption button {
+        margin-top: 0;
+    }
+}
