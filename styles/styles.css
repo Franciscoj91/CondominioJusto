@@ -3,8 +3,12 @@
 :root {
     --color-primary: #0064B7;
     --color-buttons: #2978D7;
-    --color-fontnav: #333333;
-    
+    --color-font-gray1: #333333;
+    --color-font-gray3: #828282;
+    --color-planbg: #1b3b6f;
+    --color-formbg: #4f4f4f;
+    --color-formtext: #bdbdbd;
+    --color-aboutbg: #6ba9dd;
 }
 
 /* body */
@@ -19,12 +23,19 @@ body {
     background-color: var(--color-buttons);
 }
 
+section > p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-font-gray1);
+    margin-bottom: 22px;
+}
 /* navbar */
 
 .nav-link {
     font-size: 0.875rem;
     font-weight: 400;
-    color: var(--color-fontnav);
+    color: var(--color-font-gray1);
 }
 
 .nav-link.active {
@@ -55,7 +66,9 @@ body {
 }
 
 .carousel-item img {
-    filter: blur(0.188rem) brightness(68%);
+    filter: blur(0.625rem);
+    /* background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(0.625rem); */
 }
 
 .carousel-caption h2 {
@@ -76,9 +89,66 @@ body {
     font-weight: 600;
 }
 
+/* Section planificacion */
+.plan-item {
+    display: inline-flex;
+    
+}
+
+
+
+.fondo {
+    background-color: var(--color-planbg);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.fondo img {
+    width: 70%;
+}
+
+/* Section acerca de */
+.acercade {
+    display: inline-flex;
+    background-color: var(--color-aboutbg);
+}
+
+/* footer */
+
+footer p {
+    color: aliceblue;
+    text-align: center;
+}
+.form-control {
+    background-color: var(--color-formbg);
+    color: var(--color-formtext);
+    font-weight: 400;
+}
+
+.footer {
+    display: inline-flex;
+}
+
+.footer-items{
+    display: inline-flex;
+}
+
+.footer-items a {
+    text-decoration: none;
+    color: var(--color-formtext);
+}
+
+.form-btn {
+   text-align: center;
+}
+
+
 @media screen and (max-width: 450px) {
     
-    
+    /* body */
+
     
     /* carousel */    
     .carousel-item img {
