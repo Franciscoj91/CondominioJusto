@@ -9,6 +9,7 @@
     --color-formbg: #4f4f4f;
     --color-formtext: #bdbdbd;
     --color-aboutbg: #6ba9dd;
+    --color-font-white : #f2f2f2;
 }
 
 /* body */
@@ -26,16 +27,27 @@ body {
 section > p {
     font-weight: 400;
     font-size: 20px;
-    line-height: 24px;
     color: var(--color-font-gray1);
     margin-bottom: 22px;
+    line-height: 24.2px;
 }
+
+
 /* navbar */
+
+.navbar-brand {
+    margin-left: 7.063rem;
+}
+
+.navbar-nav {
+    margin-right: 6.25rem;
+}
 
 .nav-link {
     font-size: 0.875rem;
     font-weight: 400;
     color: var(--color-font-gray1);
+    padding: 0 1.5rem;
 }
 
 .nav-link.active {
@@ -89,6 +101,30 @@ section > p {
     font-weight: 600;
 }
 
+
+/* Section Pilares */
+.card {
+    width: 78.64%;
+
+}
+
+.card-title {
+    font-weight: 500;
+    color: var(--color-font-gray1);
+    margin-left: 0.5rem;
+}
+
+.card-text {
+    font-weight: 400;
+    color: var(--color-font-gray3);
+    text-align: left;
+    margin: 0.125rem 0.5rem;
+}
+
+.card-text:last-child {
+    margin-bottom: 0.5rem;
+}
+
 /* Section planificacion */
 .plan-item {
     display: inline-flex;
@@ -117,14 +153,35 @@ section > p {
 
 /* footer */
 
+footer {
+    padding: 3.75rem 0;
+}
+
 footer p {
-    color: aliceblue;
+    color: var(--color-font-white);
     text-align: center;
+    margin: 0 1.563rem;
+    
 }
 .form-control {
     background-color: var(--color-formbg);
     color: var(--color-formtext);
     font-weight: 400;
+    border: none;
+    border-radius: 0.25rem;
+    line-height: 1rem;
+}
+
+.form-btn {
+    border-radius: 0.375rem;
+    padding: 0.625rem 2.438rem;
+    
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
@@ -140,16 +197,19 @@ footer p {
     color: var(--color-formtext);
 }
 
-.form-btn {
-   text-align: center;
-}
+
 
 
 @media screen and (max-width: 450px) {
     
     /* body */
 
-    
+    /* navbar */
+
+    .navbar-brand {
+        margin:0 0.75rem 0 0;
+    }
+
     /* carousel */    
     .carousel-item img {
         filter: blur(0.188rem) brightness(68%);
@@ -166,5 +226,47 @@ footer p {
 
     .carousel-caption button {
         margin-top: 0;
+    }
+
+    /* footer */
+
+    footer {
+        padding: 3.75rem 0;
+    }
+
+    .form-control {
+        margin: 0 0.813rem;
+        width: 93%;
+    }
+
+    textarea {
+        padding-bottom: 2rem !important;
+    }
+
+    .form-btn {
+        margin: 0 7rem;
+    }
+
+    .footer {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        
+    }
+
+    .footer-items {
+        display: inline-block;
+    }
+
+    .footerimg img{
+        width: 25%;
+    }
+}
+
+/* otras medias */
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
     }
 }

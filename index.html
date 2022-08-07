@@ -16,29 +16,29 @@
     <nav class="navbar navbar-expand-lg bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="./assets/Logo.png" alt="Logo" class="w-50"> 
+                <img src="./assets/Logo.png" alt="Logo" class="w-50 w-lg-100"> 
             </a>
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span><img src="./assets/Vector.png" alt=""></span>
+                <span><img src="./assets/hamburguesa.png" alt=""></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-5 mb-2 mb-lg-0 ms-auto">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="#carrusel">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Serviciós</a>
+                        <a class="nav-link" href="#servicios">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Noticias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contáctanos</a>
+                        <a class="nav-link" href="#footer">Contáctanos</a>
                     </li>
                 </ul>
             </div>
@@ -46,7 +46,7 @@
     </nav>
 
     <!-- carousel -->
-    <section class="carrusel"> 
+    <section class="carrusel" id="carrusel"> 
         
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
@@ -129,7 +129,7 @@
     </section>
     
     <!-- section servicios -->
-    <section class="container mt-5">
+    <section class="container mt-5" id="servicios">
         <p>Nuestros servicios</p>
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
@@ -216,7 +216,7 @@
     </section>
 
     <!-- section acerca de -->
-    <section class="container mt-5">
+    <section class="container mt-5" id="nosotros">
         <p>Nosotros</p>
         <div class="acercade mb-5 ">
 
@@ -232,10 +232,10 @@
     </section>
 
     <!-- footer con formulario -->
-    <footer class="bg-dark pt-5">
+    <footer class="bg-dark">
         <div>
             <p>Si quieres cotizar nuestros servicios ingresa tus datos y haz click en enviar. </p>
-            <form class="container">
+            <form class="container my-5">
                 <div class="mb-3">
                   <input type="text" class="form-control" id=""  placeholder="Nombre">
                 </div>
@@ -249,12 +249,15 @@
                   <input type="email" class="form-control" id=""  placeholder="Correo electrónico">
                 </div>
                 <div class="mb-3">
-                  <input type="text" class="form-control" id=""  placeholder="Motivo">
+                  <textarea rows="" cols="" class="form-control" placeholder="Motivo"></textarea>
                 </div class="m-auto">
-                <button type="submit" class="btn btn-primary form-btn">Enviar</button>
+                <div class="form-button">
+
+                    <button type="submit" class="btn btn-primary form-btn">Enviar</button>
+                </div>
               </form>
         </div>
-        <div class="footer">
+        <div class="footer" id="footer">
             <div class="footer-items">
                 <div>
                     <img src="./assets/instagram.png" alt="">
@@ -269,7 +272,7 @@
                     <a href="">+56 9 0000 0000</a>
                 </div>   
             </div>
-            <div class="ms-auto me-0">
+            <div class="ms-auto me-0 footerimg">
                 <img src="./assets/Frame 53.png" alt="">
             </div>
         </div>
