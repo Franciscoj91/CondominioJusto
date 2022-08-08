@@ -8,7 +8,9 @@ navLinks.forEach(element => {
     element.addEventListener("click", function() {
         let currentElement = document.getElementsByClassName('active');
         currentElement[0].className = currentElement[0].className.replace('active', '');
-        element.className += ' active';   
+        element.className += ' active';  
+        let burgerButton = document.getElementsByClassName('navbar-toggler');
+        burgerButton[0].click();
     })
 });  
     
