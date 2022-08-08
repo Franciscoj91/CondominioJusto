@@ -138,11 +138,13 @@ section > p {
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
-    padding: 1rem;
+    text-align: center;
 }
 
 .fondo img {
-    width: 70%;
+    margin-top: 20%;
+    width: 50%;
+    
 }
 
 /* Section acerca de */
