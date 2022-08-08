@@ -9,8 +9,13 @@ navLinks.forEach(element => {
         let currentElement = document.getElementsByClassName('active');
         currentElement[0].className = currentElement[0].className.replace('active', '');
         element.className += ' active';  
+
         let burgerButton = document.getElementsByClassName('navbar-toggler');
-        burgerButton[0].click();
+        let hideList = document.getElementById('navbarSupportedContent');
+
+        if (hideList.classList.contains('show')) {
+            burgerButton[0].click();
+        }
     })
 });  
     
