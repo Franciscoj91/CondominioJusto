@@ -6,8 +6,8 @@ navLinks = Array.from(navLinks);
 
 navLinks.forEach(element => {
     element.addEventListener("click", function() {
-        let currentEvent = document.getElementsByClassName('active');
-        currentEvent[0].className = currentEvent[0].className.replace('active', '');
+        let currentElement = document.getElementsByClassName('active');
+        currentElement[0].className = currentElement[0].className.replace('active', '');
         element.className += ' active';   
     })
 });  
