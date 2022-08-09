@@ -109,11 +109,18 @@ section > p {
     font-weight: 400;
     color: var(--color-font-gray3);
     text-align: left;
-    margin: 0.125rem 0.5rem;
+    margin: 0.125rem 0.5rem 0;
 }
 
 .card-text:last-child {
     margin-bottom: 0.5rem;
+}
+
+
+/* Section servicios */
+
+.servicios {
+    padding-top: 5rem;
 }
 
 /* Section planificacion */
@@ -139,6 +146,10 @@ section > p {
 }
 
 /* Section acerca de */
+.nosotros {
+    padding-top: 5rem;
+}
+
 .acercade {
     display: inline-flex;
     background-color: var(--color-aboutbg);
@@ -273,5 +284,11 @@ footer p {
         top: 14%;
         right: 32.8%;
         text-align: left;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1245px;
     }
 }

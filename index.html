@@ -11,9 +11,9 @@
     <link href="./styles/styles.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="navbar">
         <div class="container">
             <a class="navbar-brand ms-1 ms-lg-5 ps-lg-5" href="#">
                 <img src="./assets/Logo.png" alt="Logo" class="w-50 w-lg-100"> 
@@ -46,7 +46,7 @@
     </nav>
 
     <!-- carousel -->
-    <section class="carrusel pt-sm-5" id="carousel"> 
+    <section class="carrusel" id="carousel"> 
         
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
@@ -92,7 +92,7 @@
     <!-- section pilares -->
     <section class="container mt-5">
         <p>Nuestros pilares</p>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-md-3 g-5">
             <div class="col">
                 <div class="card">
                     <img src="./assets/confianzaCard.png" class="card-img-top" alt="...">
@@ -129,7 +129,7 @@
     </section>
     
      <!-- section servicios -->
-  <section class="container mt-5" id="servicios">
+    <section class="container servicios" id="servicios">
         <p>Nuestros servicios</p>
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
@@ -172,7 +172,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     
     <!-- section planificacion -->
     <section class="container mt-5">
@@ -216,7 +216,7 @@
     </section> 
 
     <!-- section acerca de -->
-   <section class="container mt-5" id="nosotros">
+   <section class="container mt-5 nosotros" id="nosotros">
         <p>Nosotros</p>
         <div class="acercade mb-5 ">
 
@@ -232,7 +232,7 @@
     </section>
 
     <!-- footer con formulario -->
-   <footer class="bg-dark">
+   <footer class="bg-dark footer">
         <div>
             <p>Si quieres cotizar nuestros servicios ingresa tus datos y haz click en enviar. </p>
             <form class="container my-5">

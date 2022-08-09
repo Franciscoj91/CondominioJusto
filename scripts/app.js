@@ -27,3 +27,16 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
     ride: "carousel",
     wrap : true,
 });
+
+//pilares
+function myFunction(x) {
+    let cards = document.getElementsByClassName('card');
+    cards[0].style.height = "100%";
+    cards[1].style.height = "100%";
+    cards[2].style.height = "100%";
+    
+  }
+  
+  var x = window.matchMedia("(screen)")
+  myFunction(x) // Call listener function at run time
+  x.addEventListener('resize' ,myFunction) // Attach listener function on state changes
