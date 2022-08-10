@@ -1,6 +1,5 @@
 //navbar
 let navLinks = document.getElementsByClassName('nav-link');
-console.log(navLinks);
 
 navLinks = Array.from(navLinks);
 
@@ -33,12 +32,15 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
 //pilares
 function myFunction(x) {
     let cards = document.getElementsByClassName('card');
+    console.log(cards[3].style.height);
     cards[0].style.height = "100%";
     cards[1].style.height = "100%";
     cards[2].style.height = "100%";
+    cards[3].style.height = "100%";
     
   }
   
   var x = window.matchMedia("(screen)")
   myFunction(x) // Call listener function at run time
   x.addEventListener('resize' ,myFunction) // Attach listener function on state changes
+

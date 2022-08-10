@@ -124,6 +124,24 @@ section > p {
     padding-top: 5rem;
 }
 
+.card-carousel {
+    max-width: 234px;
+}
+
+
+.card-carousel-item {
+    height: 50vh;
+}
+
+.card-title {
+    color: var(--color-planbg);
+    font-weight: 600;
+}
+
+.card-text {
+    color: var(--color-font-gray3);
+}
+
 /* Section planificacion */
 
 
