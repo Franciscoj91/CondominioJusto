@@ -10,6 +10,7 @@
     --color-formtext: #bdbdbd;
     --color-aboutbg: #6ba9dd;
     --color-font-white : #f2f2f2;
+    --color-aboutfont-white: #fff;
 }
 
 /* body */
@@ -155,8 +156,20 @@ section > p {
 }
 
 .acercade {
-    display: inline-flex;
     background-color: var(--color-aboutbg);
+    border-radius: 0.5rem;
+}
+
+.nosotros-text {
+    color: var(--color-aboutfont-white);
+}
+
+.nosotros-text h5 {
+    font-weight: 600;
+}
+
+.nosotros-text p {
+    font-size: 14px;
 }
 
 /* footer */
