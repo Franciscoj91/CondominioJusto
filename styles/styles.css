@@ -223,7 +223,7 @@ footer p {
     align-items: center;
 }
 
-.footer {
+.footer-info {
     display: inline-flex;
 }
 
@@ -296,9 +296,6 @@ footer p {
         display: inline-block;
     }
 
-    .footerimg img{
-        width: 25%;
-    }
 }
 
 /* otras medias */

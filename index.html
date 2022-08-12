@@ -365,32 +365,79 @@
     </section>
 
     <!-- footer con formulario -->
-   <!-- <footer class="bg-dark footer">
+   <footer class="bg-dark footer" id="footer">
         <div>
             <p>Si quieres cotizar nuestros servicios ingresa tus datos y haz click en enviar. </p>
-            <form class="container my-5">
+            <form class="container my-5 d-lg-none" action="https://formsubmit.co/panafran500@hotmail.com" method="post">
+                
                 <div class="mb-3">
-                  <input type="text" class="form-control" id=""  placeholder="Nombre">
+                  <input type="text" class="form-control" id=""  placeholder="Nombre" name="name">
                 </div>
                 <div class="mb-3">
-                  <input type="text" class="form-control" id=""  placeholder="Apellido">
+                  <input type="text" class="form-control" id=""  placeholder="Apellido" name="apellido">
                 </div>
                 <div class="mb-3">
-                  <input type="text" class="form-control" id=""  placeholder="Teléfono">
+                  <input type="text" class="form-control" id=""  placeholder="Teléfono" name="phone">
                 </div>
                 <div class="mb-3">
-                  <input type="email" class="form-control" id=""  placeholder="Correo electrónico">
+                  <input type="email" class="form-control" id=""  placeholder="Correo electrónico" name="email">
                 </div>
                 <div class="mb-3">
-                  <textarea rows="" cols="" class="form-control" placeholder="Motivo"></textarea>
+                  <textarea rows="" cols="" class="form-control" placeholder="Motivo" name="message"></textarea>
                 </div class="m-auto">
-                <div class="form-button">
+                <div class="form-button mt-5">
+
+                    <button type="submit" class="btn btn-primary form-btn">Enviar</button>
+                </div>
+              </form>
+            <form class="container my-5 d-none d-lg-block" action="https://formsubmit.co/panafran500@hotmail.com" method="post">
+                
+                <div class="row">
+                    
+                    <div class="col-6">
+                        <div class="row">
+        
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id=""  placeholder="Nombre" name="nombre">
+                            </div>
+                        </div>
+                        <div class="row">
+        
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id=""  placeholder="Apellido" name="apellido">
+                            </div>  
+                        </div>
+                        <div class="row">
+        
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id=""  placeholder="Teléfono" name="telefono">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+
+                            <div class="mb-3">
+                              <input type="email" class="form-control" id=""  placeholder="Correo electrónico" name="correo">
+                            </div>
+                        </div>
+                        <div class="row ">
+
+                            <div class="mb-3 w-100">
+                              <textarea rows="4" cols="" class="form-control pb-2" placeholder="Motivo" name="motivo"></textarea>
+                            </div class="m-auto">
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="form-button mt-4">
 
                     <button type="submit" class="btn btn-primary form-btn">Enviar</button>
                 </div>
               </form>
         </div>
-        <div class="footer" id="footer">
+        <div class="footer-info">
             <div class="footer-items">
                 <div>
                     <img src="./assets/instagram.png" alt="">
@@ -405,11 +452,11 @@
                     <a href="">+56 9 0000 0000</a>
                 </div>   
             </div>
-            <div class="ms-auto me-0 footerimg">
-                <img src="./assets/Frame 53.png" alt="">
+            <div class="ms-auto me-0 d-flex justify-content-end align-items-center">
+                <img src="./assets/Frame 53.png" alt="" class="w-50">
             </div>
         </div>
-    </footer>   -->
+    </footer>  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
