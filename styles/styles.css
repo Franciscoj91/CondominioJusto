@@ -204,11 +204,15 @@ footer p {
 }
 .form-control {
     background-color: var(--color-formbg);
-    color: var(--color-formtext);
+    
     font-weight: 400;
     border: none;
     border-radius: 0.25rem;
     line-height: 1rem;
+}
+
+.form-control::placeholder {
+    color: var(--color-formtext);
 }
 
 .form-btn {
@@ -231,9 +235,16 @@ footer p {
     display: inline-flex;
 }
 
-.footer-items a {
+.footer-items-text {
     text-decoration: none;
     color: var(--color-formtext);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.icon-container {
+    width: 13.33px;
+    height: 13.33px;
 }
 
 
@@ -294,7 +305,10 @@ footer p {
 
     .footer-items {
         display: inline-block;
+        margin-right: 5rem;
     }
+
+
 
 }
 
