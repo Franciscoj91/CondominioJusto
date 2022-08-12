@@ -291,6 +291,21 @@ footer p {
         margin-top: 0;
     }
 
+
+    /* nosotros */
+
+    .nosotros-text {
+        width: 80%;
+    }
+
+    .img-container {
+        height: 300px;
+    }
+
+    .nosotros-img {
+        object-fit: cover;
+        height: inherit;
+    }
     /* footer */
 
     footer {
