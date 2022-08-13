@@ -339,9 +339,7 @@ footer p {
     }
     /* footer */
 
-    footer {
-        padding: 3.75rem 0;
-    }
+ 
 
     .form-control {
         margin: 0 0.813rem;
@@ -360,6 +358,7 @@ footer p {
         width: 100%;
         display: inline-block;
         text-align: center;
+        padding: 5rem 0;
         
     }
 
