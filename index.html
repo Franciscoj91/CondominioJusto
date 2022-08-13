@@ -143,10 +143,14 @@
                         
                         <img src="./assets/servicios1.png" alt="" class="w-100">
                     </div>    
-                    <div class="card-body mt-auto h-100">
+                    <div class="card-body mt-auto h-100" >
                         <h5 class="card-title">Auditoria de gastos comunes</h5>
-                        <p class="card-text">Revisión detallada de los ingresos y egresos, para evaluar el uso óptimo de los recursos de la comunidad.</p>
-                        <a href="" class="card-link">Ver más</a>
+                        <div class="card-text" id="expand-text">
+
+                            <p>Revisión detallada de los ingresos y egresos, para evaluar el uso óptimo de los recursos de la comunidad.</p>
+                        </div>
+
+                        <a href="#" class="card-link" id="expand-link">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -382,16 +386,16 @@
             <form class="container my-5 d-lg-none" action="https://formsubmit.co/panafran500@hotmail.com" method="post">
                 
                 <div class="mb-3">
-                  <input type="text" class="form-control" id=""  placeholder="Nombre" name="name">
+                  <input type="text" class="form-control" id=""  placeholder="Nombre" name="name" required>
                 </div>
                 <div class="mb-3">
                   <input type="text" class="form-control" id=""  placeholder="Apellido" name="apellido">
                 </div>
                 <div class="mb-3">
-                  <input type="text" class="form-control" id=""  placeholder="Teléfono" name="phone">
+                  <input type="tel" class="form-control" id=""  placeholder="Teléfono" name="phone" required>
                 </div>
                 <div class="mb-3">
-                  <input type="email" class="form-control" id=""  placeholder="Correo electrónico" name="email">
+                  <input type="email" class="form-control" id=""  placeholder="Correo electrónico" name="email" required>
                 </div>
                 <div class="mb-3">
                   <textarea rows="" cols="" class="form-control" placeholder="Motivo" name="message"></textarea>
@@ -421,7 +425,7 @@
                         <div class="row">
         
                             <div class="mb-3">
-                                <input type="text" class="form-control" id=""  placeholder="Teléfono" name="telefono" required>
+                                <input type="tel" class="form-control" id=""  placeholder="Teléfono" name="telefono" required>
                             </div>
                         </div>
                     </div>
