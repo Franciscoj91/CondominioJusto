@@ -124,13 +124,26 @@ section > p {
     padding-top: 5rem;
 }
 
+.owl-carousel {
+    min-height: 350px;
+}
+
+.owl-stage-outer {
+    min-height: 350px;
+}
+
+.owl-stage {
+    min-height: 350px;
+    padding-left: 0 !important;
+}
+
 .card-carousel {
     width: 234.75px;
 }
 
 
 .card-carousel-item {
-    height: 312px;
+    height: 330px;
     width: 234.75px;
 }
 

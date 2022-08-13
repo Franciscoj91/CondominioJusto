@@ -44,3 +44,31 @@ function myFunction(x) {
   myFunction(x) // Call listener function at run time
   x.addEventListener('resize' ,myFunction) // Attach listener function on state changes
 
+//Servicios
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        loop: false,
+        center: false,
+        
+        stagePadding: 0,
+        dots: false,
+        autoWidth: false,
+        responsive : {
+            0: {
+                items:1,
+                center:false,
+                margin: 0,
+                stagePadding: 50
+
+            },
+            700: {
+                items:3,
+                margin: 25
+            },
+            1000: {
+                items:4,
+                margin: 22
+            }
+        }
+    });
+});
