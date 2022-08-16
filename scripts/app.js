@@ -1,4 +1,4 @@
-//navbar
+
 let navLinks = document.getElementsByClassName('nav-link');
 
 navLinks = Array.from(navLinks);
@@ -19,7 +19,7 @@ navLinks.forEach(element => {
 });  
     
     
-//carousel
+
 const myCarouselElement = document.querySelector('#carousel');
 const carousel = new bootstrap.Carousel(myCarouselElement, {
     interval: 5000,
@@ -29,7 +29,7 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
     pause: false
 });
 
-//pilares
+
 function myFunction(x) {
     let cards = document.getElementsByClassName('card');
     console.log(cards[3].style.height);
@@ -41,15 +41,13 @@ function myFunction(x) {
   }
   
   var x = window.matchMedia("(screen)")
-  myFunction(x) // Call listener function at run time
-  x.addEventListener('resize' ,myFunction) // Attach listener function on state changes
+  myFunction(x);
+  x.addEventListener('resize', myFunction);
 
-//Servicios
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         loop: false,
         center: false,
-        
         stagePadding: 0,
         dots: false,
         autoWidth: false,
@@ -73,7 +71,7 @@ $(document).ready(function(){
     });
 });
 
-//expand-Card
+
 
 let expandLink = document.getElementById('expand-link');
 let expandText = document.getElementById('expand-text');

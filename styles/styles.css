@@ -13,7 +13,7 @@
     --color-aboutfont-white: #fff;
 }
 
-/* body */
+
 
 body {
     
@@ -34,7 +34,7 @@ section > p {
 }
 
 
-/* navbar */
+
 
 
 .nav-link {
@@ -53,7 +53,7 @@ section > p {
     border: 0;
 }
 
-/* carousel */
+
 
 .carrusel {
     padding-top: 5rem;
@@ -97,7 +97,7 @@ section > p {
 }
 
 
-/* Section Pilares */
+
 
 
 .card-title {
@@ -118,7 +118,6 @@ section > p {
 }
 
 
-/* Section servicios */
 
 .servicios {
     padding-top: 5rem;
@@ -178,7 +177,7 @@ section > p {
     margin: 0 0 0 0.6rem;
 }
 
-/* Section planificacion */
+
 
 
 
@@ -204,7 +203,7 @@ section > p {
     flex: 1 0 auto;
 }
 
-/* Section acerca de */
+
 .nosotros {
     padding-top: 5rem;
 }
@@ -238,7 +237,7 @@ section > p {
     height: -webkit-fill-available;
 }
 
-/* footer */
+
 
 footer {
     padding:5rem 0 3.75rem 0;
@@ -309,13 +308,6 @@ footer p {
 
 @media screen and (max-width: 576px) {
     
-    /* body */
-
-    /* navbar */
-
-
-
-    /* carousel */    
 
 
     .carousel-item img {
@@ -350,7 +342,6 @@ footer p {
         object-fit: cover;
         height: inherit;
     }
-    /* footer */
 
  
 
@@ -388,7 +379,6 @@ footer p {
 
 }
 
-/* otras medias */
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1.5rem;
