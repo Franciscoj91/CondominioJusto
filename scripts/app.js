@@ -61,7 +61,7 @@ $(document).ready(function(){
             },
             700: {
                 items:3,
-                margin: 25
+                margin: 50
             },
             1000: {
                 items:4,

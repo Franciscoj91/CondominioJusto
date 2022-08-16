@@ -80,8 +80,7 @@ section > p {
 
 .carousel-item img {
     filter: blur(0.625rem) brightness(68%);
-    /* background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(0.625rem); */
+
 }
 
 .carousel-caption h2 {
@@ -100,6 +99,11 @@ section > p {
     background-color: var(--color-buttons);
     padding: 1rem 2.5rem;
     font-weight: 600;
+}
+
+.carousel-btn-text {
+    text-decoration: none;
+    color: var(--color-aboutfont-white);
 }
 
 
