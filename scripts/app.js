@@ -22,7 +22,7 @@ navLinks.forEach(element => {
 
 const myCarouselElement = document.querySelector('#carousel');
 const carousel = new bootstrap.Carousel(myCarouselElement, {
-    interval: 5000,
+    interval: 4500,
     ride: "carousel",
     wrap : true,
     touch: true,
