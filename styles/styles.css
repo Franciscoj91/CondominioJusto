@@ -79,7 +79,7 @@ section > p {
 } 
 
 .carousel-item img {
-    filter: blur(0.625rem) brightness(68%);
+    filter: brightness(68%);
 
 }
 
