@@ -72,20 +72,3 @@ $(document).ready(function(){
 });
 
 
-
-let expandLink = document.getElementById('expand-link');
-let expandText = document.getElementById('expand-text');
-let text = '<p class="card-text" >Revisión detallada de los ingresos y egresos, para evaluar el uso óptimo de los recursos de la comunidad.</p><ul class="card-text"><li>Revisión de remuneraciones (RRHH)</li><li>Revisión de ingresos y egresos</li><li> Cumplimiento de la Ley de Copropiedad e inmobiliaria</li><li>Fondo de Reserva</li><li>Revisión de los saldos bancarios</li></ul>'
-
-expandLink.addEventListener('click', function (event) {
-    event.preventDefault();
-
-    if (expandLink.innerHTML == "Ver más") {
-        expandLink.innerHTML = "Ver menos";
-  
-    } else {
-        expandLink.innerHTML = "Ver más";
-    }
-    
-})
-
